@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --clr-neutral-dark-blue: hsl(234, 12%, 34%);
+    --clr-neutral-grayish-blue: hsl(229, 6%, 66%);
+    --clr-neutral-light-gray: hsl(0, 0%, 98%);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-neutral-light-gray);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    max-width: 70rem;
+}
+
+.intro {
+    display: block;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+#first-heading {
+    color: var(--clr-neutral-grayish-blue);
+    font-weight: 200;
+}
+
+#second-heading {
+    color: var(--clr-neutral-dark-blue);
+    font-weight: 600;
+}
+
+.paragraph {
+    width: 40rem;
+    color: var(--clr-neutral-grayish-blue);
+    display: block;
+    margin: auto;
+    font-size: 1.099rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 50em) {
+    .paragraph {
+        width: 23rem;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
+    place-items: center;
+    margin-bottom: 5rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 50em) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+}
+
+.box {
+    max-width: 22rem;
+    height: 16rem;
+    background-color: white;
+    box-shadow: -1px 12px 11px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0.645rem;
+    padding: 1rem 0 0 2rem;
+}
+
+.box h2 {
+    color: var(--clr-neutral-dark-blue);
+}
+
+.box p {
+    color: var(--clr-neutral-grayish-blue);
+}
+
+@media (max-width: 50em) {
+    .box {
+        display: block;
+        margin: auto;
+        margin-top: 1rem;
+    }
+} 
+
+img {
+    margin-top: 2rem;
+    margin-left: 15rem;
+}
+
+.box-supervisor {
+    border-top: 6px solid var(--cyan);
+}
+
+.box-builder {
+    border-top: 6px solid var(--red);
+}
+
+.box-karma {
+    border-top: 6px solid var(--orange);
+}
+
+.box-calculator {
+    border-top: 6px solid var(--blue);
+}
